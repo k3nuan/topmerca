@@ -14,9 +14,10 @@ function ocmCheckRequirements() {
   }
 
   // Mmcrypt
-  if (!in_array('mcrypt', get_loaded_extensions())) {
+  #xtop | disabled
+  /*if (!in_array('mcrypt', get_loaded_extensions())) {
     $errors['mcrypt'] = OCModify::$instance->language->get('error_requirement_mcrypt');
-  }
+  }*/
 
   // Zip
   if (!in_array('zip', get_loaded_extensions())) {
