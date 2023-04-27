@@ -17,6 +17,11 @@ Options -Indexes
 # Deny from all
 </FilesMatch>
 
+# Allow POST from basel popup form to Mautic
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+#Header set Access-Control-Allow-Origin 'https://my.gumtree.com'
+</IfModule>
 
 # SEO URL Settings
 RewriteEngine On
